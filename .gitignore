@@ -1,0 +1,54 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Android Studio
+.idea/
+*.iml
+
+# Local configuration
+local.properties
+
+# APK / App Bundle
+*.apk
+*.aab
+
+# Signing files
+*.jks
+*.keystore
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML model / datasets
+dataset/
+datasets/
+models/
+model/
+test_images/
+train_images/
+validation_images/
+*.h5
+*.keras
+*.tflite
+*.pth
+*.pt
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

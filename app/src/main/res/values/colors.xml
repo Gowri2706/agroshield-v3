@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================================
+         Teal theme (agroshield_v3__4_.html Figma prototype oda
+         exact colors). Namma ELLA existing layouts-um already
+         color/primary_green, color/bg_light, etc. use pannுthu -
+         so idha mattum maathina, MUZHU app-um retheme aagும், oru
+         layout XML-um Java file-um touch pannாma (0 risk of errors).
+
+         Mapping (old resource name -> HTML CSS variable):
+         primary_green      -> teal
+         primary_green_dark -> teal2
+         accent_amber       -> amber
+         bg_light           -> off
+         card_white         -> white / card
+         text_dark          -> text
+         text_grey          -> text2
+         danger_red         -> red
+         safe_blue          -> blue
+         ============================================================ -->
+
+    <color name="primary_green">#0BAE8F</color>
+    <color name="primary_green_dark">#09987C</color>
+    <color name="accent_amber">#F5A623</color>
+    <color name="bg_light">#F5FAF9</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_dark">#1A2E2A</color>
+    <color name="text_grey">#6B8F88</color>
+    <color name="danger_red">#E05252</color>
+    <color name="safe_blue">#4A90D9</color>
+
+    <!-- New teal-theme extras (light tints for badges/pills, matching HTML) -->
+    <color name="teal_light">#E6F7F4</color>
+    <color name="teal_mid">#B2E8DF</color>
+    <color name="amber_light">#FEF3E2</color>
+    <color name="red_light">#FEF0F0</color>
+    <color name="green">#34C472</color>
+    <color name="green_light">#E8F8EF</color>
+    <color name="blue_light">#EBF4FF</color>
+    <color name="text_light3">#A8C4BF</color>
+</resources>

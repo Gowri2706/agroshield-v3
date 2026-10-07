@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light">
+
+    <include layout="@layout/header_teal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnFetchDevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📡 Fetch from Smart Owl device"
+                android:backgroundTint="@color/accent_amber"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Sensor input card (HTML .card style) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Plant" android:textColor="@color/text_grey" android:textSize="11sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <Spinner android:id="@+id/spinnerPlant" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input" android:padding="12dp" android:layout_marginBottom="12dp" />
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/soil_moisture_label" android:textColor="@color/text_grey" android:textSize="11sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <EditText
+                    android:id="@+id/etMoisture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_input"
+                    android:textColor="#000000"
+                    android:textColorHint="#808080"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="0-100" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/soil_humidity_label" android:textColor="@color/text_grey" android:textSize="11sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <EditText android:id="@+id/etHumidity" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="12dp"
+                    android:layout_marginBottom="12dp" android:hint="0-100"  android:textColor="#000000"
+                    android:textColorHint="#808080" />
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/soil_temp_label" android:textColor="@color/text_grey" android:textSize="11sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <EditText android:id="@+id/etTemp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned" android:background="@drawable/bg_input" android:padding="12dp"
+                    android:layout_marginBottom="12dp" android:hint="e.g. 28" android:textColor="#000000"
+                    android:textColorHint="#808080"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/soil_ph_label" android:textColor="@color/text_grey" android:textSize="11sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp"/>
+                <EditText android:id="@+id/etPh" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" android:background="@drawable/bg_input" android:padding="12dp"
+                    android:hint="0-14"  android:textColor="#000000"
+                    android:textColorHint="#808080" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCheckSoil"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/btn_check"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/soilResultCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/result_title"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_green_dark"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvSoilResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aiResultCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:backgroundTint="@color/teal_light"
+                android:padding="16dp"
+                android:elevation="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AI Irrigation Prediction (plant-based)"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_green_dark"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvAiResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_dark" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/tabbar" />
+
+</LinearLayout>

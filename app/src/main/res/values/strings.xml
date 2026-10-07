@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AgroShield v3</string>
+    <string name="home_title">Welcome, Farmer!</string>
+    <string name="home_subtitle">Choose what you want to check</string>
+
+    <string name="feature_animal_title">Animal Detection</string>
+    <string name="feature_animal_desc">Detect wild animals near your farm</string>
+
+    <string name="feature_plant_title">Plant Diagnosis</string>
+    <string name="feature_plant_desc">Scan leaf to detect disease</string>
+
+    <string name="feature_soil_title">Soil &amp; Humidity</string>
+    <string name="feature_soil_desc">Get soil health advisory</string>
+
+    <string name="btn_language">Language</string>
+    <string name="btn_capture">Capture Photo</string>
+    <string name="btn_gallery">Choose from Gallery</string>
+    <string name="btn_analyze">Analyze</string>
+    <string name="btn_check">Check Now</string>
+    <string name="btn_back">Back</string>
+
+    <string name="result_title">Result</string>
+    <string name="confidence_note">Note: This is an AI prediction, not 100%% guaranteed. Please cross-check with a local agriculture expert for critical decisions.</string>
+
+    <string name="select_language_title">Select Language / மொழியை தேர்வு செய்யவும்</string>
+    <string name="lang_english">English</string>
+    <string name="lang_tamil">தமிழ்</string>
+    <string name="lang_hindi">हिन्दी</string>
+
+    <string name="soil_moisture_label">Soil Moisture (%)</string>
+    <string name="soil_humidity_label">Humidity (%)</string>
+    <string name="soil_temp_label">Temperature (°C)</string>
+    <string name="soil_ph_label">Soil pH (0-14)</string>
+
+    <string name="permission_denied">Camera permission needed to continue</string>
+    <string name="analyzing">Analyzing…</string>
+
+    <string name="animal_hint">Tap the mic and hold near the sound (animal call, footsteps) for 5 seconds</string>
+    <string name="animal_ready">Tap to record 5 seconds of sound</string>
+    <string name="animal_recording">🎙️ Recording… (5 sec)</string>
+    <string name="btn_record">RECORD</string>
+    <string name="animal_uploading">📡 Uploading to server…</string>
+    <string name="server_error">Server ah reach panna mudiyala. Internet / server address check pannunga.</string>
+</resources>

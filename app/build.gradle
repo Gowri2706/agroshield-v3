@@ -1,0 +1,65 @@
+// ============================================================
+// build.gradle (Module: app)
+// Idhula tha ella library (TensorFlow Lite, CameraX) add pannirukom
+// ============================================================
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.agroshield.v3'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.agroshield.v3"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "3.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // .tflite model file ah compress pannama assets la vaikanum
+    // idhu illana app crash aagum model load pannumbodhu
+    androidResources {
+        noCompress "tflite"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // --- Core Android UI ---
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.core:core:1.12.0'
+
+    // --- CameraX (photo eduthu prediction panna) ---
+    implementation 'androidx.camera:camera-core:1.3.1'
+    implementation 'androidx.camera:camera-camera2:1.3.1'
+    implementation 'androidx.camera:camera-lifecycle:1.3.1'
+    implementation 'androidx.camera:camera-view:1.3.1'
+
+    // --- TensorFlow Lite (on-device ML prediction, offline works) ---
+    implementation 'org.tensorflow:tensorflow-lite:2.14.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.4.4'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+}

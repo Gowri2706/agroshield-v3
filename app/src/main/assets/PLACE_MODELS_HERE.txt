@@ -1,0 +1,9 @@
+STATUS:
+  plant_model.tflite   - DONE (real trained model, 38 classes, image-based, ON-DEVICE)
+  plant_labels.txt     - DONE
+  disease_info.json    - DONE (bilingual EN/TA disease info)
+
+  Animal Detection     - ONLINE now (FastAPI server), NOT on-device anymore.
+                          animal_model.tflite / animal_labels.txt / yamnet.tflite
+                          are NOT used here anymore - removed from this app.
+                          See: ml_training/animal_detection/server/app.py

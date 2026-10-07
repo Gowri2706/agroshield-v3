@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============================================================
+  tabbar.xml - reusable <include> component
+  ============================================================
+  HTML .tabbar style ah match pannுthu: white bg, top border,
+  4 tabs, active tab teal color + dot indicator.
+
+  Ovvoru Activity Java-la idha wire pannanum:
+    findViewById(R.id.tabHome).setOnClickListener(...)
+    findViewById(R.id.tabAnimal).setOnClickListener(...)
+    findViewById(R.id.tabPlant).setOnClickListener(...)
+    findViewById(R.id.tabSoil).setOnClickListener(...)
+  Active tab ah highlight panna, TabBarHelper.highlight() use pannunga
+  (com.agroshield.v3.utils.TabBarHelper).
+  ============================================================
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/tabAnimal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tabAnimalIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐾"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tabAnimalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Animal"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_light3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabSoil"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tabSoilIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💧"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tabSoilLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Sensors"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_light3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabPlant"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tabPlantIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌿"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tabPlantLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Diagnose"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_light3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tabHomeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏠"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tabHomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Home"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_light3" />
+    </LinearLayout>
+
+</LinearLayout>

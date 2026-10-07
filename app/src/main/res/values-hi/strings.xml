@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">एग्रोशील्ड v3</string>
+    <string name="home_title">नमस्ते, किसान!</string>
+    <string name="home_subtitle">आप क्या जांचना चाहते हैं?</string>
+
+    <string name="feature_animal_title">पशु पहचान</string>
+    <string name="feature_animal_desc">अपने खेत के पास के जंगली जानवरों का पता लगाएं</string>
+
+    <string name="feature_plant_title">पौधे रोग निदान</string>
+    <string name="feature_plant_desc">रोग जानने के लिए पत्ती को स्कैन करें</string>
+
+    <string name="feature_soil_title">मिट्टी और नमी</string>
+    <string name="feature_soil_desc">मिट्टी स्वास्थ्य सलाह प्राप्त करें</string>
+
+    <string name="btn_language">भाषा</string>
+    <string name="btn_capture">फोटो लें</string>
+    <string name="btn_gallery">गैलरी से चुनें</string>
+    <string name="btn_analyze">विश्लेषण करें</string>
+    <string name="btn_check">अभी जांचें</string>
+    <string name="btn_back">वापस</string>
+
+    <string name="result_title">परिणाम</string>
+    <string name="confidence_note">नोट: यह AI भविष्यवाणी है, 100%% सुनिश्चित नहीं है। महत्वपूर्ण निर्णयों के लिए स्थानीय कृषि विशेषज्ञ से सलाह लें।</string>
+
+    <string name="select_language_title">भाषा चुनें</string>
+    <string name="lang_english">English</string>
+    <string name="lang_tamil">தமிழ்</string>
+    <string name="lang_hindi">हिन्दी</string>
+
+    <string name="soil_moisture_label">मिट्टी की नमी (%)</string>
+    <string name="soil_humidity_label">हवा की नमी (%)</string>
+    <string name="soil_temp_label">तापमान (°C)</string>
+    <string name="soil_ph_label">मिट्टी pH (0-14)</string>
+
+    <string name="permission_denied">जारी रखने के लिए कैमरा अनुमति आवश्यक है</string>
+    <string name="analyzing">विश्लेषण हो रहा है…</string>
+
+    <string name="animal_hint">माइक पर टैप करें और आवाज़ (पशु की आवाज़, कदमों की आहट) के पास 5 सेकंड रखें</string>
+    <string name="animal_ready">5 सेकंड की आवाज़ रिकॉर्ड करने के लिए टैप करें</string>
+    <string name="animal_recording">🎙️ रिकॉर्डिंग हो रही है… (5 सेकंड)</string>
+    <string name="animal_uploading">📡 सर्वर पर भेजा जा रहा है…</string>
+    <string name="server_error">सर्वर से कनेक्ट नहीं हो सका। इंटरनेट / सर्वर एड्रेस जांचें।</string>
+    <string name="btn_record">रिकॉर्ड करें</string>
+</resources>

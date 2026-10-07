@@ -1,0 +1,22 @@
+// ============================================================
+// settings.gradle - Project level settings
+// Android Studio open panna, "AgroShield_v3/android_app" folder
+// ah select pannunga (File > Open > android_app folder)
+// ============================================================
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "AgroShield_v3"
+include ':app'
